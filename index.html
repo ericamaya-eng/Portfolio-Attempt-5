@@ -1,1 +1,232 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery Home</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #f8f8f8;
+            color: #252525;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #f4f4f4;
+            padding: 20px 40px;
+            border-bottom: 1px solid #ddd;
+        }
+        nav {
+            flex: 1;
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style-type: none;
+        }
+        nav ul li {
+            margin-right: 30px;
+        }
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            font-size: 1.05em;
+            transition: color 0.2s;
+        }
+        nav ul li a:hover {
+            color: #297bf6;
+        }
+        .logo-container {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        .logo-placeholder {
+            width: 60px;
+            height: 60px;
+            background: #297bf6;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 999px;
+            font-size: 1.4em;
+            font-weight: bold;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        }
+        main {
+            max-width: 1200px;
+            margin: 40px auto 0 auto;
+            padding: 0 20px;
+        }
+        .art-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        .art-card {
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+            transition: box-shadow 0.2s;
+        }
+        .art-card:hover {
+            box-shadow: 0 6px 18px rgba(41,123,246,0.16);
+        }
+        .art-image {
+            background: #eee;
+            min-height: 220px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .art-image img {
+            max-width: 100%;
+            max-height: 200px;
+            object-fit: contain;
+        }
+        .art-info {
+            padding: 20px;
+        }
+        .art-title {
+            margin: 0 0 8px 0;
+            font-size: 1.17em;
+            font-weight: 600;
+        }
+        .art-desc {
+            margin: 0;
+            color: #555;
+            font-size: 0.99em;
+        }
+        footer.about-section {
+            background: #f5f6fa;
+            text-align: center;
+            padding: 50px 20px 25px 20px;
+            margin-top: 70px;
+            border-top: 1px solid #e2e4ee;
+        }
+        .about-header {
+            font-size: 1.5em;
+            margin-bottom: 16px;
+            letter-spacing: 1px;
+        }
+        .about-text {
+            color: #444;
+            font-size: 1.08em;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+        @media (max-width: 950px) {
+            .art-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width: 650px) {
+            .art-grid {
+                grid-template-columns: 1fr;
+            }
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 12px 12px 0 12px;
+            }
+            .logo-container {
+                align-self: flex-end;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="logo-container">
+            <div class="logo-placeholder">LOGO</div>
+        </div>
+    </header>
+    <main>
+        <div class="art-grid">
+            <div class="art-card">
+                <div class="art-image">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Art 1">
+                </div>
+                <div class="art-info">
+                    <div class="art-title">Morning Serenity</div>
+                    <div class="art-desc">A soothing digital landscape painting highlighting a misty sunrise over tranquil waters.</div>
+                </div>
+            </div>
+            <div class="art-card">
+                <div class="art-image">
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Art 2">
+                </div>
+                <div class="art-info">
+                    <div class="art-title">Urban Story</div>
+                    <div class="art-desc">A vibrant street art mural blending bold colors and intricate shapes found in city corners.</div>
+                </div>
+            </div>
+            <div class="art-card">
+                <div class="art-image">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=400&q=80" alt="Art 3">
+                </div>
+                <div class="art-info">
+                    <div class="art-title">Dreamer’s Gaze</div>
+                    <div class="art-desc">A striking portrait that captures the introspective mood of the modern dreamer.</div>
+                </div>
+            </div>
+            <div class="art-card">
+                <div class="art-image">
+                    <img src="https://images.unsplash.com/photo-1454023492550-5696f8ff10e1?auto=format&fit=crop&w=400&q=80" alt="Art 4">
+                </div>
+                <div class="art-info">
+                    <div class="art-title">Timeless Nature</div>
+                    <div class="art-desc">A detailed watercolor of a forest scene, evoking the eternal calm of the natural world.</div>
+                </div>
+            </div>
+            <div class="art-card">
+                <div class="art-image">
+                    <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a5c97?auto=format&fit=crop&w=400&q=80" alt="Art 5">
+                </div>
+                <div class="art-info">
+                    <div class="art-title">Color in Motion</div>
+                    <div class="art-desc">An abstract expressionist piece emphasizing kinetic energy through a swirl of vibrant colors.</div>
+                </div>
+            </div>
+            <div class="art-card">
+                <div class="art-image">
+                    <img src="https://images.unsplash.com/photo-1451481454041-104482d8e284?auto=format&fit=crop&w=400&q=80" alt="Art 6">
+                </div>
+                <div class="art-info">
+                    <div class="art-title">Memoirs of Light</div>
+                    <div class="art-desc">A minimalist piece exploring the subtle dance of light and shadow across simple forms.</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="about-section">
+        <div class="about-header">About the Gallery</div>
+        <div class="about-text">
+            Welcome to our online gallery! We celebrate artistry in all its forms, curating unique works from a diverse range of creators. Our mission is to connect people with art that inspires, provokes thought, and brings beauty to everyday life. Explore our collections, discover your next favorite piece, and join us in supporting the vibrant world of contemporary art.
+        </div>
+    </footer>
+</body>
+</html>
