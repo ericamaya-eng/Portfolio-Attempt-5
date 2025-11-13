@@ -8,16 +8,16 @@
         body {
             margin: 0;
             font-family: "Segoe UI", Arial, sans-serif;
-            background: #f8f8f8;
-            color: #252525;
+            background: #FAF5FF;
+            color: #3D155F;
         }
         header {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            background: #f4f4f4;
+            background: #EDE2F5;
             padding: 20px 40px;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid #C7A6E6;
         }
         nav {
             flex: 1;
@@ -36,13 +36,13 @@
         }
         nav ul li a {
             text-decoration: none;
-            color: #333;
+            color: #6C3483;
             font-weight: 500;
             font-size: 1.05em;
             transition: color 0.2s;
         }
         nav ul li a:hover {
-            color: #297bf6;
+            color: #A35DFF;
         }
         .logo-container {
             width: 80px;
@@ -54,7 +54,7 @@
         .logo-placeholder {
             width: 60px;
             height: 60px;
-            background: #297bf6;
+            background: #A35DFF;
             color: #fff;
             display: flex;
             align-items: center;
@@ -62,7 +62,7 @@
             border-radius: 999px;
             font-size: 1.4em;
             font-weight: bold;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            box-shadow: 0 2px 6px rgba(163,93,255,0.13);
         }
         main {
             max-width: 1200px;
@@ -76,17 +76,19 @@
             margin-bottom: 60px;
         }
         .art-card {
-            background: #fff;
+            background: #E1D2EE;
             border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
-            transition: box-shadow 0.2s;
+            box-shadow: 0 2px 10px rgba(110,52,131,0.06);
+            transition: box-shadow 0.2s, background 0.2s;
+            border: 2px solid #C7A6E6;
         }
         .art-card:hover {
-            box-shadow: 0 6px 18px rgba(41,123,246,0.16);
+            box-shadow: 0 6px 18px rgba(163,93,255,0.18);
+            background: #F2E6FC;
         }
         .art-image {
-            background: #eee;
+            background: #E9D8FD;
             min-height: 220px;
             display: flex;
             align-items: center;
@@ -99,31 +101,30 @@
         }
         .art-info {
             padding: 20px;
+            text-align: center;
         }
         .art-title {
-            margin: 0 0 8px 0;
-            font-size: 1.17em;
-            font-weight: 600;
-        }
-        .art-desc {
             margin: 0;
-            color: #555;
-            font-size: 0.99em;
+            font-size: 1.25em;
+            font-weight: 700;
+            color: #6C3483;
+            letter-spacing: 1px;
         }
         footer.about-section {
-            background: #f5f6fa;
+            background: #F5E6FF;
             text-align: center;
             padding: 50px 20px 25px 20px;
             margin-top: 70px;
-            border-top: 1px solid #e2e4ee;
+            border-top: 1px solid #C7A6E6;
         }
         .about-header {
             font-size: 1.5em;
             margin-bottom: 16px;
             letter-spacing: 1px;
+            color: #3D155F;
         }
         .about-text {
-            color: #444;
+            color: #5D2875;
             font-size: 1.08em;
             max-width: 700px;
             margin: 0 auto;
@@ -171,8 +172,7 @@
                     <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Art 1">
                 </div>
                 <div class="art-info">
-                    <div class="art-title">Morning Serenity</div>
-                    <div class="art-desc">A soothing digital landscape painting highlighting a misty sunrise over tranquil waters.</div>
+                    <div class="art-title">Serenity</div>
                 </div>
             </div>
             <div class="art-card">
@@ -180,8 +180,7 @@
                     <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Art 2">
                 </div>
                 <div class="art-info">
-                    <div class="art-title">Urban Story</div>
-                    <div class="art-desc">A vibrant street art mural blending bold colors and intricate shapes found in city corners.</div>
+                    <div class="art-title">Urban</div>
                 </div>
             </div>
             <div class="art-card">
@@ -189,8 +188,7 @@
                     <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=400&q=80" alt="Art 3">
                 </div>
                 <div class="art-info">
-                    <div class="art-title">Dreamer’s Gaze</div>
-                    <div class="art-desc">A striking portrait that captures the introspective mood of the modern dreamer.</div>
+                    <div class="art-title">Dreamer</div>
                 </div>
             </div>
             <div class="art-card">
@@ -198,8 +196,7 @@
                     <img src="https://images.unsplash.com/photo-1454023492550-5696f8ff10e1?auto=format&fit=crop&w=400&q=80" alt="Art 4">
                 </div>
                 <div class="art-info">
-                    <div class="art-title">Timeless Nature</div>
-                    <div class="art-desc">A detailed watercolor of a forest scene, evoking the eternal calm of the natural world.</div>
+                    <div class="art-title">Nature</div>
                 </div>
             </div>
             <div class="art-card">
@@ -207,8 +204,7 @@
                     <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a5c97?auto=format&fit=crop&w=400&q=80" alt="Art 5">
                 </div>
                 <div class="art-info">
-                    <div class="art-title">Color in Motion</div>
-                    <div class="art-desc">An abstract expressionist piece emphasizing kinetic energy through a swirl of vibrant colors.</div>
+                    <div class="art-title">Motion</div>
                 </div>
             </div>
             <div class="art-card">
@@ -216,8 +212,7 @@
                     <img src="https://images.unsplash.com/photo-1451481454041-104482d8e284?auto=format&fit=crop&w=400&q=80" alt="Art 6">
                 </div>
                 <div class="art-info">
-                    <div class="art-title">Memoirs of Light</div>
-                    <div class="art-desc">A minimalist piece exploring the subtle dance of light and shadow across simple forms.</div>
+                    <div class="art-title">Light</div>
                 </div>
             </div>
         </div>
@@ -225,7 +220,7 @@
     <footer class="about-section">
         <div class="about-header">About the Gallery</div>
         <div class="about-text">
-            Welcome to our online gallery! We celebrate artistry in all its forms, curating unique works from a diverse range of creators. Our mission is to connect people with art that inspires, provokes thought, and brings beauty to everyday life. Explore our collections, discover your next favorite piece, and join us in supporting the vibrant world of contemporary art.
+            Welcome to our online gallery! We celebrate artistry in all its forms, curating unique works from a diverse range of creators. Our mission is to connect people with art that inspires, provokes, and delights—all in a purple-hued atmosphere.
         </div>
     </footer>
 </body>
